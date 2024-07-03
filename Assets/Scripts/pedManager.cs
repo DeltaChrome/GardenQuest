@@ -47,7 +47,7 @@ public class pedManager : MonoBehaviour, IDataPersistence
 
     async void RequestPermission()
     {
-        AndroidRuntimePermissions.Permission result = await AndroidRuntimePermissions.RequestPermissionAsync( "android.permission.ACCESS_FINE_LOCATION" );
+        AndroidRuntimePermissions.Permission result = await AndroidRuntimePermissions.RequestPermissionAsync( "android.permission.ACTIVITY_RECOGNITION" );
         //AndroidRuntimePermissions.Permission result = AndroidRuntimePermissions.RequestPermission( "android.permission.ACCESS_FINE_LOCATION" ); // Synchronous version (not recommended)
         if( result == AndroidRuntimePermissions.Permission.Granted )
             Debug.Log( "We have permission to access fine location!" );

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2795244875710772482}
   - component: {fileID: 2795244875710772483}
   m_Layer: 5
-  m_Name: shopText
+  m_Name: quantityText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: price
+  m_text: quantity
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -147,9 +147,9 @@ GameObject:
   - component: {fileID: 2795244876541555941}
   - component: {fileID: 2795244876541555942}
   - component: {fileID: 2795244876541555943}
-  - component: {fileID: 2795244876541555940}
+  - component: {fileID: 665424658456630583}
   m_Layer: 5
-  m_Name: shopItem
+  m_Name: invItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2795244876541555940}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: shopItemScript, Assembly-CSharp
         m_MethodName: shopItemClicked
         m_Mode: 1
@@ -270,7 +270,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2795244876541555940
+--- !u!114 &665424658456630583
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -279,12 +279,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2795244876541555945}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 816c27b40a689d7439b9ac180fa95579, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c0e32983ce0d4f4ba6c5ce019700c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 200
+  quantity: 0
   ID: 0
   name: unknown
-  hasBeenPurchased: 0
-  shopText: {fileID: 2795244875710772485}
+  quantityText: {fileID: 2795244875710772485}
   player: {fileID: 0}
